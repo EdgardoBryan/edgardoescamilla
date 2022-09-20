@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
-import githubb from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/githubb.png" 
-import linkedin from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/linkedin.png"
-import Holiday from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/Holiday.png";
-import instagram from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/instagram.png";
-import Multi from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/Multi.png";
-import Tupac from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/Tupac.png";
-import Website from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/Website.png";
-import MyPic from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/MyPic.jpeg";
-import Burger from "/Users/edgardoescamilla/challenges/edgardoescamillavf/client/src/Burger.png";
+// import githubb from "client/public/githubb.png" 
+// import linkedin from "client/src/components/linkedin.png"
+// import Holiday from "client/src/components/Holiday.png";
+// import instagram from "client/public/instagram.png";
+// import Multi from "client/public/Multi.png";
+// import Tupac from "client/public/Tupac.png";
+// import Website from "client/src/components/Website.png";
+
+// import Burger from "client/public/imgfolder/Burger.png";
 import getCurrentUser from "../services/getCurrentUser";
 import "../assets/scss/main.scss";
 import RegistrationForm from "./registration/RegistrationForm";
@@ -39,13 +39,13 @@ const App = (props) => {
         <div className="moreinfotabs">
         <div>
             <a href="https://www.linkedin.com/in/edgardo-bryan-escamilla/">
-              <img className="link" src={linkedin} />
+              <img className="link"  />
               Linkden
             </a>
           </div>
           <div>
             <a href="https://github.com/EdgardoBryan">
-              <img className="link" src={githubb} />
+              <img className="link"  />
               Github
             </a>
           </div>
@@ -60,7 +60,7 @@ const App = (props) => {
           </h3>
         </div>
         <div className="second-box">
-          <img className="profile-pic" src={MyPic} alt="edpicture"></img>
+          <img className="profile-pic" alt="edpicture"></img>
         </div>
       </div>
       <div className="languageFrameworks">
@@ -86,7 +86,7 @@ const App = (props) => {
       <h2 className="textProjects">Coding Projects</h2>
       <div className="codingProjects">
         <div className="projectboxes pro1">
-          <img src={Burger} alt="burgerpic" className="Menu"></img>
+          <img  alt="burgerpic" className="Menu"></img>
           <h3>BURGER MENU PAGE BUILT USING HTML AND CSS</h3>
           <a href="https://codepen.io/edgardocodes11/pen/zYRgroK">
             <button className="button1">Code Base</button>
@@ -94,7 +94,6 @@ const App = (props) => {
         </div>
         <div className="projectboxes pro2">
           <img
-            src={Website}
             alt="websites"
             className="WebsitesBuilder"
           ></img>
@@ -104,7 +103,7 @@ const App = (props) => {
           </a>
         </div>
         <div className="projectboxes pro3">
-          <img src={Tupac} alt="idCard" className="tupac"></img>
+          <img  alt="idCard" className="tupac"></img>
           <h3>MOCK PORTFOLLIO CARD BUILT USING HTML CSS AND FONTAWESOME</h3>
           <a href="https://codepen.io/edgardocodes11/pen/xxWOBKo">
             <button className="button3">Code Base</button>
@@ -112,7 +111,6 @@ const App = (props) => {
         </div>
         <div className="projectboxes pro4">
           <img
-            src={Multi}
             alt="multiPage"
             className="reactmultistep"
           ></img>
@@ -125,14 +123,14 @@ const App = (props) => {
           </a>
         </div>
         <div className="projectboxes pro5">
-          <img src={instagram} alt="instagram" className="instagram"></img>
+          <img  alt="instagram" className="instagram"></img>
           <h3>Instagram clone page built with Html and Css</h3>
           <a href="https://codepen.io/edgardocodes11/pen/JjLKNmQ">
             <button className="button5">Code Base</button>
           </a>
         </div>
         <div className="projectboxes pro6">
-          <img src={Holiday} alt="holiday" className="holiday"></img>
+          <img  alt="holiday" className="holiday"></img>
           <h3>
             Full Stack Application with full sign in functionality, able to
             delete edit and create new holidays and with a database to persist
