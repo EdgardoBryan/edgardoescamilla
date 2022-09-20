@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace edgardoescamillavf-client build",
+    "dev": "yarn workspace edgardoescamillavf-server dev",
+    "dev:debug": "yarn workspace edgardoescamillavf-server dev:debug",
+    "heroku-postbuild": "yarn workspace edgardoescamillavf-client build",
+    "start": "yarn workspace edgardoescamillavf-server start",
+    "dev:cypress": "yarn workspace edgardoescamillavf-server dev:e2e",
+    "e2e:open": "yarn workspace edgardoescamillavf-e2e e2e:open",
+    "e2e:run": "yarn workspace edgardoescamillavf-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.19",
+    "yarn": "1.22.18"
+  }
+}
