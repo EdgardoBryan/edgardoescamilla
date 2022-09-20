@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { hot } from "react-hot-loader/root";
-// import githubb from "client/public/githubb.png" 
-// import linkedin from "client/src/components/linkedin.png"
-// import Holiday from "client/src/components/Holiday.png";
-// import instagram from "client/public/instagram.png";
-// import Multi from "client/public/Multi.png";
-// import Tupac from "client/public/Tupac.png";
-// import Website from "client/src/components/Website.png";
-
-// import Burger from "client/public/imgfolder/Burger.png";
 import getCurrentUser from "../services/getCurrentUser";
 import "../assets/scss/main.scss";
 import RegistrationForm from "./registration/RegistrationForm";
@@ -39,13 +30,13 @@ const App = (props) => {
         <div className="moreinfotabs">
         <div>
             <a href="https://www.linkedin.com/in/edgardo-bryan-escamilla/">
-              <img className="link"  />
+              <img className="link"  src="https://i.imgur.com/geNU5mj.png" />
               Linkden
             </a>
           </div>
           <div>
             <a href="https://github.com/EdgardoBryan">
-              <img className="link"  />
+              <img className="link" src="https://i.imgur.com/Ea2sRvO.png"  />
               Github
             </a>
           </div>
@@ -60,7 +51,7 @@ const App = (props) => {
           </h3>
         </div>
         <div className="second-box">
-          <img className="profile-pic" alt="edpicture"></img>
+          <img className="profile-pic" src="https://i.imgur.com/umoFTyY.jpg" alt="edpicture"></img>
         </div>
       </div>
       <div className="languageFrameworks">
@@ -86,7 +77,7 @@ const App = (props) => {
       <h2 className="textProjects">Coding Projects</h2>
       <div className="codingProjects">
         <div className="projectboxes pro1">
-          <img  alt="burgerpic" className="Menu"></img>
+          <img src="https://i.imgur.com/BhiFcQr.png" alt="burgerpic" className="Menu"></img>
           <h3>BURGER MENU PAGE BUILT USING HTML AND CSS</h3>
           <a href="https://codepen.io/edgardocodes11/pen/zYRgroK">
             <button className="button1">Code Base</button>
@@ -94,6 +85,7 @@ const App = (props) => {
         </div>
         <div className="projectboxes pro2">
           <img
+          src="https://i.imgur.com/TDZsLfP.png"
             alt="websites"
             className="WebsitesBuilder"
           ></img>
@@ -103,7 +95,7 @@ const App = (props) => {
           </a>
         </div>
         <div className="projectboxes pro3">
-          <img  alt="idCard" className="tupac"></img>
+          <img src="https://i.imgur.com/2LXS77o.png" alt="idCard" className="tupac"></img>
           <h3>MOCK PORTFOLLIO CARD BUILT USING HTML CSS AND FONTAWESOME</h3>
           <a href="https://codepen.io/edgardocodes11/pen/xxWOBKo">
             <button className="button3">Code Base</button>
@@ -111,6 +103,7 @@ const App = (props) => {
         </div>
         <div className="projectboxes pro4">
           <img
+          src="https://i.imgur.com/AGz2yQF.png"
             alt="multiPage"
             className="reactmultistep"
           ></img>
@@ -123,14 +116,14 @@ const App = (props) => {
           </a>
         </div>
         <div className="projectboxes pro5">
-          <img  alt="instagram" className="instagram"></img>
+          <img src="https://i.imgur.com/fLQFF4z.png" alt="instagram" className="instagram"></img>
           <h3>Instagram clone page built with Html and Css</h3>
           <a href="https://codepen.io/edgardocodes11/pen/JjLKNmQ">
             <button className="button5">Code Base</button>
           </a>
         </div>
         <div className="projectboxes pro6">
-          <img  alt="holiday" className="holiday"></img>
+          <img src="https://i.imgur.com/tyfCGS2.png" alt="holiday" className="holiday"></img>
           <h3>
             Full Stack Application with full sign in functionality, able to
             delete edit and create new holidays and with a database to persist
