@@ -42,6 +42,7 @@ const App = (props) => {
             <div>FullStack Developer</div>
           </div>
         </div>
+        <div></div>
         <div className="ProfileDescription">
           <div className="bostonpicside">
             <h3 className="bio">
